@@ -20,12 +20,12 @@ while True:
     if(numbers == 'done'):
         break
     try:
-        float(numbers)
+        fnumber = float(numbers)
     except:
         print('Bad Input')
         quit()
     
-    number_list.append(numbers)
+    number_list.append(fnumber)
 
 print('Minimum:',min(number_list))
 print('Maximum:',max(number_list))
